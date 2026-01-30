@@ -1,0 +1,75 @@
+{
+    "Maldives": {
+        "leisure": [
+            {
+                "day": 1,
+                "activity": "Arrival at Male International Airport and Speedboat Transfer to Maafushi",
+                "image": "https://images.unsplash.com/photo-1590523741811-47067c06ad43?q=80&w=2000"
+            },
+            {
+                "day": 2,
+                "activity": "Sandbank Trip with Picnic Lunch and Snorkeling",
+                "image": "https://images.unsplash.com/photo-1544550765-af2f87463c5b?q=80&w=2000",
+                "video": null
+            },
+            {
+                "day": 3,
+                "activity": "Half Day Island Hopping and Dolphin Watching",
+                "image": "https://images.pexels.com/photos/225869/pexels-photo-225869.jpeg"
+            },
+            {
+                "day": 4,
+                "activity": "Water Sports: Jet Ski and Parasailing",
+                "image": "https://images.pexels.com/photos/1071882/pexels-photo-1071882.jpeg"
+            },
+            {
+                "day": 5,
+                "activity": "Morning Swim and Transfer to Airport"
+            }
+        ],
+        "honeymoon": [
+            {
+                "day": 1,
+                "activity": "Seaplane Transfer to Overwater Villa Resort",
+                "image": "https://images.unsplash.com/photo-1590523741811-47067c06ad43?q=80&w=2000"
+            },
+            {
+                "day": 2,
+                "activity": "Floating Breakfast and Couple Spa Treatment",
+                "image": "https://images.unsplash.com/photo-1590523278191-995cbcda646b?q=80&w=2000"
+            },
+            {
+                "day": 3,
+                "activity": "Sunset Cruise with Champagne",
+                "image": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=2000"
+            },
+            {
+                "day": 4,
+                "activity": "Private Beach Dinner under the Stars",
+                "image": "https://images.pexels.com/photos/6267516/pexels-photo-6267516.jpeg"
+            }
+        ],
+        "adventure": [
+            {
+                "day": 1,
+                "activity": "Check-in at Dive Resort",
+                "image": "https://hotel.hardrock.com/maldives/files/6016/Aerial_View.jpeg"
+            },
+            {
+                "day": 2,
+                "activity": "Scuba Diving at Manta Point",
+                "image": "https://images.unsplash.com/photo-1584844114250-932f1a30a80e?q=80&w=2000"
+            },
+            {
+                "day": 3,
+                "activity": "Whale Shark Expedition",
+                "image": "https://images.unsplash.com/photo-1560275619-4662e36fa65c?q=80&w=2000"
+            },
+            {
+                "day": 4,
+                "activity": "Shipwreck Exploration",
+                "image": "https://images.unsplash.com/photo-1629235483953-60919379659a?q=80&w=2000"
+            }
+        ]
+    }
+}

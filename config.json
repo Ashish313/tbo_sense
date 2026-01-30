@@ -1,0 +1,5 @@
+{
+  "config_path": "/chatbot_qa",
+  "host": "172.16.108.87",
+  "port": 2379
+}

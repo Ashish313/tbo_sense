@@ -1,0 +1,19 @@
+# General
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+venv/
+.venv/
+env/
+.idea/
+.vscode/
+
+# Project Specific
+local.json
+uploads/
+chromadb/
+chat_history.db
+*.log

@@ -1,0 +1,67 @@
+[
+    {
+        "id": "h_mal_1",
+        "name": "Soneva Fushi",
+        "location": "Maldives",
+        "price_per_night": 2000,
+        "rating": 5.0,
+        "amenities": [
+            "Private Beach",
+            "Water Slide",
+            "Observatory",
+            "Cinema Paradiso",
+            "Free WiFi"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Baa_Atoll%2C_Maldives_-_panoramio_%281%29.jpg",
+        "video": null,
+        "type": "Luxury Resort"
+    },
+    {
+        "id": "h_mal_2",
+        "name": "Hard Rock Hotel Maldives",
+        "location": "Maldives",
+        "price_per_night": 500,
+        "rating": 4.5,
+        "amenities": [
+            "Underwater Music",
+            "Rock Spa",
+            "Kids Club",
+            "Pool",
+            "Bar"
+        ],
+        "image": "https://hotel.hardrock.com/maldives/files/6016/Aerial_View.jpeg",
+        "video": null,
+        "type": "Resort"
+    },
+    {
+        "id": "h_mal_3",
+        "name": "Paradise Island Resort",
+        "location": "Maldives",
+        "price_per_night": 300,
+        "rating": 4.2,
+        "amenities": [
+            "Water Villas",
+            "Dive Center",
+            "Spa",
+            "Honeymoon Specials"
+        ],
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/03/65/59/aerial-view.jpg",
+        "video": null,
+        "type": "Resort"
+    },
+    {
+        "id": "h_mal_4",
+        "name": "Maafushi Guest House",
+        "location": "Maldives",
+        "price_per_night": 80,
+        "rating": 4.0,
+        "amenities": [
+            "City View",
+            "Breakfast",
+            "Close to Beach"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Maafushi_%28Kaafu_Atoll%29%2C_Maldives_-_panoramio.jpg",
+        "video": null,
+        "type": "Guest House"
+    }
+]

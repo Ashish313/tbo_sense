@@ -1,0 +1,72 @@
+[
+    {
+        "id": "f_del_mle_1",
+        "airline": "Indigo",
+        "flight_number": "6E-101",
+        "origin": "Delhi",
+        "destination": "Male",
+        "date": "2023-12-25",
+        "departure_time": "08:00",
+        "arrival_time": "13:00",
+        "duration": "5h",
+        "price": 15000,
+        "class": "Economy",
+        "stops": 1
+    },
+    {
+        "id": "f_bom_mle_1",
+        "airline": "Vistara",
+        "flight_number": "UK-202",
+        "origin": "Mumbai",
+        "destination": "Male",
+        "date": "2023-12-25",
+        "departure_time": "10:00",
+        "arrival_time": "12:15",
+        "duration": "2h 45m",
+        "price": 18000,
+        "class": "Economy",
+        "stops": 0
+    },
+    {
+        "id": "f_dxb_mle_1",
+        "airline": "Emirates",
+        "flight_number": "EK-555",
+        "origin": "Dubai",
+        "destination": "Male",
+        "date": "2023-12-25",
+        "departure_time": "09:00",
+        "arrival_time": "14:15",
+        "duration": "4h 15m",
+        "price": 45000,
+        "class": "Business",
+        "stops": 0
+    },
+    {
+        "id": "f_lhr_mle_1",
+        "airline": "British Airways",
+        "flight_number": "BA-111",
+        "origin": "London",
+        "destination": "Male",
+        "date": "2023-12-25",
+        "departure_time": "18:00",
+        "arrival_time": "09:00 +1",
+        "duration": "10h",
+        "price": 85000,
+        "class": "Economy",
+        "stops": 0
+    },
+    {
+        "id": "f_blr_mle_1",
+        "airline": "Indigo",
+        "flight_number": "6E-777",
+        "origin": "Bengaluru",
+        "destination": "Male",
+        "date": "2023-12-25",
+        "departure_time": "11:00",
+        "arrival_time": "12:30",
+        "duration": "2h",
+        "price": 12000,
+        "class": "Economy",
+        "stops": 0
+    }
+]

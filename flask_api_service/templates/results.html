@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .card-price {
+            font-size: 1.2em;
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        .card-details {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #0056b3;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="page-title">Search Results</h1>
+        <div id="results-container">
+            <p style="text-align: center;">Loading...</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const params = new URLSearchParams(window.location.search);
+            const type = params.get("type"); // hotels, packages, flights
+            const location_query = params.get("location")?.toLowerCase();
+
+            const titleMap = {
+                "hotels": "Hotel Results",
+                "packages": "Package Results",
+                "flights": "Flight Results"
+            };
+
+            const container = document.getElementById("results-container");
+            document.getElementById("page-title").textContent = titleMap[type] || "Search Results";
+
+            if (!type) {
+                container.innerHTML = '<p class="error">No result type specified.</p>';
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/data/${type}.json`);
+                if (!response.ok) throw new Error("Failed to load data");
+                const data = await response.json();
+
+                let filtered = data;
+                if (location_query) {
+                    filtered = data.filter(item => {
+                        const loc = item.location || item.destination || "";
+                        return loc.toLowerCase().includes(location_query);
+                    });
+                }
+
+                // Add more filtering if needed based on other params? For now just dump relevant items.
+
+                if (filtered.length === 0) {
+                    container.innerHTML = '<p style="text-align: center;">No results found.</p>';
+                    return;
+                }
+
+                container.innerHTML = filtered.map(item => {
+                    let image = item.image || item.images?.[0] || 'https://via.placeholder.com/800x400?text=No+Image';
+                    if (type === 'flights') {
+                        return `
+                            <div class="card">
+                                <div class="card-content">
+                                    <h2 class="card-title">${item.airline} - ${item.flight_number}</h2>
+                                    <p class="card-price">$${item.price}</p>
+                                    <div class="card-details">
+                                        <p><strong>From:</strong> ${item.departure_city} (${item.departure_airport})</p>
+                                        <p><strong>To:</strong> ${item.arrival_city} (${item.arrival_airport})</p>
+                                        <p><strong>Departure:</strong> ${item.departure_time}</p>
+                                        <p><strong>Arrival:</strong> ${item.arrival_time}</p>
+                                        <p><strong>Duration:</strong> ${item.duration}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else if (type === 'packages') {
+                        return `
+                            <div class="card">
+                                <img src="${image}" alt="${item.name}">
+                                <div class="card-content">
+                                    <h2 class="card-title">${item.name}</h2>
+                                    <p class="card-price">$${item.price_per_person} / person</p>
+                                    <div class="card-details">
+                                        <p>${item.description}</p>
+                                        <p><strong>Duration:</strong> ${item.duration_days} Days / ${item.duration_nights} Nights</p>
+                                        <p><strong>Type:</strong> ${item.type}</p>
+                                        <p><strong>Inclusions:</strong> ${item.inclusions.join(', ')}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        // Hotels
+                        return `
+                            <div class="card">
+                                <img src="${image}" alt="${item.name}">
+                                <div class="card-content">
+                                    <h2 class="card-title">${item.name} <span class="badge">${item.rating} ★</span></h2>
+                                    <p class="card-price">$${item.price_per_night} / night</p>
+                                    <div class="card-details">
+                                        <p><strong>Location:</strong> ${item.location}</p>
+                                        <p><strong>Type:</strong> ${item.type}</p>
+                                        <p><strong>Amenities:</strong> ${item.amenities.join(', ')}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }).join('');
+
+            } catch (err) {
+                console.error(err);
+                container.innerHTML = '<p class="error">Error loading results.</p>';
+            }
+        });
+    </script>
+</body>
+
+</html>

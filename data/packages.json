@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pkg_mal_1",
+        "name": "Maldives Honeymoon Bliss",
+        "destination": "Maldives",
+        "duration": "5D/4N",
+        "price": 3500,
+        "type": "Honeymoon",
+        "inclusions": [
+            "Water Villa Stay",
+            "Candlelight Dinner",
+            "Couple Spa",
+            "Seaplane Transfer"
+        ],
+        "season": "All Year",
+        "image": "https://images.unsplash.com/photo-1590523278191-995cbcda646b?q=80&w=2000"
+    },
+    {
+        "id": "pkg_mal_2",
+        "name": "Adventure in Atolls",
+        "destination": "Maldives",
+        "duration": "4D/3N",
+        "price": 1500,
+        "type": "Adventure",
+        "inclusions": [
+            "Snorkeling with Mantas",
+            "Jet Skiing",
+            "Sandbank Picnic",
+            "Speedboat Transfer"
+        ],
+        "season": "Winter",
+        "image": "https://images.unsplash.com/photo-1584844114250-932f1a30a80e?q=80&w=2000"
+    },
+    {
+        "id": "pkg_mal_3",
+        "name": "Luxury Family Escape",
+        "destination": "Maldives",
+        "duration": "6D/5N",
+        "price": 5000,
+        "type": "Family",
+        "inclusions": [
+            "2 Bedroom Beach Villa",
+            "Kids Club Access",
+            "Dolphin Cruise",
+            "Full Board Meals"
+        ],
+        "season": "Summer",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/03/65/59/aerial-view.jpg"
+    },
+    {
+        "id": "pkg_mal_4",
+        "name": "Budget Island Hopping",
+        "destination": "Maldives",
+        "duration": "5D/4N",
+        "price": 800,
+        "type": "Leisure",
+        "inclusions": [
+            "Stay in Maafushi",
+            "Local Ferry Transfers",
+            "Half Day Snorkeling",
+            "Breakfast"
+        ],
+        "season": "Low Season",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Maafushi_%28Kaafu_Atoll%29%2C_Maldives_-_panoramio.jpg"
+    }
+]
