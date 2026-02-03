@@ -5,52 +5,6 @@ import time
 from applications.logger.mod import generate_app_log, LogLevels
 
 
-def post_ext_api(data: dict, url: str, token: str, api_name: str = "post_ext_api"):
-
-    headers = {
-        'tbohive-token': token,
-        'Content-Type': 'application/json'
-    }
-
-    start_time = int(time.time() * 1000)
-    # Log Request
-    generate_app_log(
-        api_name=api_name,
-        log_level=LogLevels.Info,
-        message=f"Request: {json.dumps(data, default=str)} URL: {url}",
-        start_time=start_time,
-        reference_id="EXTERNAL", # No seller_id available here usually
-        user_id="EXTERNAL"
-    )
-
-    try:
-        response = requests.post(url, json=data, headers=headers)
-        response.raise_for_status()  # Raise error for bad responses
-        
-        resp_json = response.json()
-        # Log Success Response
-        generate_app_log(
-            api_name=api_name,
-            log_level=LogLevels.Info,
-            message=f"Response: {json.dumps(resp_json, default=str)}",
-            start_time=start_time,
-            reference_id="EXTERNAL",
-            user_id="EXTERNAL"
-        )
-        return resp_json, True
-    except requests.exceptions.RequestException as e:
-        error_msg = str(e)
-        # Log Error
-        generate_app_log(
-            api_name=api_name,
-            log_level=LogLevels.Error,
-            message=f"Error: {error_msg}",
-            start_time=start_time,
-            reference_id="EXTERNAL",
-            user_id="EXTERNAL"
-        )
-        return {"error": error_msg}, False
-
 
 def post_api(data: dict, url: str, token: str, user_id: str, api_name: str = "post_api"):
     
