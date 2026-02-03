@@ -33,19 +33,20 @@ search_hotels_tool = StructuredTool.from_function(
         "- Checking hotel prices and availability\n"
         "- Filtering hotels by budget or number of guests\n\n"
         "COMMON QUESTION TYPES:\n"
-        "✓ 'Find me a hotel in Dubai for next week'\n"
-        "✓ 'Show me cheap hotels in Paris'\n"
-        "✓ 'I need a 5-star hotel in London'\n"
-        "✓ 'Hotels in Mumbai under $100'\n"
-        "✓ 'Looking for a place to stay in Tokyo'\n\n"
+        "✓ 'Find me a hotel in Maldives for next week'\n"
+        "✓ 'Show me cheap hotels in Maldives'\n"
+        "✓ 'I need a 5-star hotel in Maldives'\n"
+        "✓ 'Hotels in Maldives under $100'\n"
+        "✓ 'Looking for a place to stay in Maldives'\n\n"
         "PARAMETER:\n"
         "- location: Target city (required)\n"
         "- check_in: Date of arrival (required)\n"
         "- budget: Max price limit (optional)\n"
         "- guests: Count of people (default: 2)\n\n"
+        "- min_rating: Minimum hotel rating (default: 0)\n\n"
         "EXAMPLES:\n"
-        "User: 'Find hotels in Bali'\n"
-        "→ Call: search_hotels(location='Bali', check_in='2024-02-01')\n"
+        "User: 'Find hotels in Maldives'\n"
+        "→ Call: search_hotels(location='Maldives', check_in='2024-02-01')\n"
     ),
     args_schema=SearchHotelsInput
 )
@@ -60,17 +61,27 @@ search_flights_tool = StructuredTool.from_function(
         "- Checking flight schedules and availability\n"
         "- Comparing flight options between destinations\n\n"
         "COMMON QUESTION TYPES:\n"
-        "✓ 'Flights from Delhi to London'\n"
-        "✓ 'I want to fly to New York on 25th Dec'\n"
-        "✓ 'Show me flights to Dubai'\n"
+        "✓ 'Flights from Delhi to Maldives'\n"
+        "✓ 'I want to fly to Maldives on 25th Dec'\n"
+        "✓ 'Show me flights to Maldives'\n"
         "✓ 'Is there a flight from Mumbai to Goa tomorrow?'\n\n"
         "PARAMETER:\n"
         "- origin: Departure city (required)\n"
         "- destination: Arrival city (required)\n"
-        "- date: Travel date (required)\n\n"
+        "- date: Travel date (required)\n"
+        "- airline: Airline name (optional, e.g., 'IndiGo', 'Vistara')\n"
+        "- passengers: Number of travelers (optional, default 1)\n"
+        "- cabin_class: Economy/Business/First (optional, default Economy)\n"
+        "- trip_type: 'one-way' or 'round-trip' (optional, default one-way)\n"
+        "- return_date: YYYY-MM-DD (required if trip_type='round-trip')\n"
+        "- budget: Max price limit (optional)\n\n"
         "EXAMPLES:\n"
-        "User: 'Book a flight from DXB to LHR'\n"
-        "→ Call: search_flights(origin='Dubai', destination='London', date='2024-03-10')\n"
+        "User: 'Flight from Delhi to Maldives'\n"
+        "→ Call: search_flights(origin='Delhi', destination='Maldives', date='2024-03-10')\n"
+        "User: '2 tickets to Bali business class'\n"
+        "→ Call: search_flights(origin='...', destination='Bali', ..., passengers=2, cabin_class='Business')\n"
+        "User: 'Round trip to Maldives from 1st to 5th Feb'\n"
+        "→ Call: search_flights(..., trip_type='round-trip', date='2024-02-01', return_date='2024-02-05')\n"
     ),
     args_schema=SearchFlightsInput
 )
@@ -85,18 +96,18 @@ create_itinerary_tool = StructuredTool.from_function(
         "- Getting suggestions for activities\n"
         "- Creating a day-by-day travel plan\n\n"
         "COMMON QUESTION TYPES:\n"
-        "✓ 'Plan a 5-day trip to Bali'\n"
-        "✓ 'I want a 3-day itinerary for Paris'\n"
+        "✓ 'Plan a 5-day trip to Maldives'\n"
+        "✓ 'I want a 3-day itinerary for Maldives'\n"
         "✓ 'Suggest a honeymoon trip to Maldives'\n"
-        "✓ 'Business trip plan for London within 10000 INR'\n\n"
+        "✓ 'Business trip plan for Maldives within 10000 INR'\n\n"
         "PARAMETER:\n"
         "- destination: Target city (required)\n"
         "- duration_days: Length of trip (required)\n"
         "- purpose: leisure/business (required)\n"
         "- budget: max price in INR (float) (optional)\n\n"
         "EXAMPLES:\n"
-        "User: 'Make a 4 day plan for Tokyo'\n"
-        "→ Call: create_itinerary(destination='Tokyo', duration_days=4, purpose='leisure')\n"
+        "User: 'Make a 4 day plan for Maldives'\n"
+        "→ Call: create_itinerary(destination='Maldives', duration_days=4, purpose='leisure')\n"
     ),
     args_schema=CreateItineraryInput
 )
@@ -347,17 +358,17 @@ def get_tool_registry():
     registry["search_hotels"] = {
         "tool": search_hotels_tool,
         "description": f"""
-            1. Search for hotels in any city (Dubai, Paris, London, etc.)
+            1. Search for hotels in Maldives
             2. Check hotel prices and availability
             3. Find hotels within a specific budget
             4. Look for accommodation for specific dates
             5. Find hotels for families or groups (guest count)
-            6. "Find a hotel in New York"
-            7. "Show me cheap hotels in Bali"
+            6. "Find a hotel in Maldives"
+            7. "Show me cheap hotels in Maldives"
             8. "I need a 5-star resort in Maldives"
             9. "Are there any hotels available next week?"
             10. "Find hotels with rating 4 and above"
-            11. "Show me highly rated hotels in Paris"
+            11. "Show me highly rated hotels in Maldives"
         """,
         "schema": SearchHotelsInput.model_json_schema()
     }
@@ -368,12 +379,23 @@ def get_tool_registry():
             1. Search for flight tickets between cities
             2. Check availability of flights on specific dates
             3. Compare flight options for travel
-            4. "Find flights from Delhi to Mumbai"
-            5. "Ticket from London to New York on 1st Jan"
-            6. "Are there flights to Goa tomorrow?"
+            4. "Find flights from Delhi to Maldives"
+            5. "Ticket from India to Maldives on 1st Jan"
+            6. "Are there flights to Maldives tomorrow?"
             7. "Search air tickets"
-            8. "Show me Indigo flights to Male"
+            8. "Show me Indigo flights to Maldives"
             9. "Find flights with Emirates"
+            10. "Flights for 2 people"
+            11. "Business class flight to London"
+            12. "Find me 2 tickets to Dubai in Business Class"
+            13. "Round trip flights from Delhi to Maldives from 1st to 5th Feb"
+            14. "Return ticket from Mumbai to Dubai departing 10th March returning 15th March"
+            15. "Flights to Delhi under 5000"
+            16. "Cheap flights to Mumbai"
+            17. "Budget flight to London"
+            18. "Show me flights to Dubai below 40000"
+            19. "Find me 2 tickets to Maldives under 20000"
+            20. "Business class to London under 100000"
         """,
         "schema": SearchFlightsInput.model_json_schema()
     }
@@ -384,10 +406,10 @@ def get_tool_registry():
             1. Create a travel itinerary for a destination
             2. Plan a day-by-day trip schedule
             3. Suggest activities for leisure or business trips
-            4. "Plan a 3-day trip to Paris"
+            4. "Plan a 3-day trip to Maldives"
             5. "Make an itinerary for Bali"
-            6. "Suggest things to do in Tokyo"
-            7. "Travel plan for a week in London with 5000.0 budget"
+            6. "Suggest things to do in Maldives"
+            7. "Travel plan for a week in Maldives with 5000.0 budget"
         """,
         "schema": CreateItineraryInput.model_json_schema()
     }

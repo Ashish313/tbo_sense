@@ -212,53 +212,53 @@ def handle_user_query():
 
     try:
 
-        chat_data = get_user_chat_mapping_by_id(chat_id)
+        # chat_data = get_user_chat_mapping_by_id(chat_id)
         
-        # Mock for UI Testing
-        if chat_data is None and chat_id == "bc9f871c-6f26-44cc-853c-8ac98209e37a":
-             print(f"[{function_name}] Using MOCK chat data for test ID: {chat_id}")
-             chat_data = {
-                "chat_id": chat_id,
-                "user_id": user_id,
-                "chat_name": "UI Test Chat",
-                "chat_initiated": True
-             }
+        # # Mock for UI Testing
+        # if chat_data is None and chat_id == "bc9f871c-6f26-44cc-853c-8ac98209e37a":
+        #      print(f"[{function_name}] Using MOCK chat data for test ID: {chat_id}")
+        #      chat_data = {
+        #         "chat_id": chat_id,
+        #         "user_id": user_id,
+        #         "chat_name": "UI Test Chat",
+        #         "chat_initiated": True
+        #      }
 
-        if chat_data is None:
-            return jsonify({
-                "status": False,
-                "msg": "Chat ID is required",
-                "data": data,
-                "end_prompt": False,
-                "table": False,
-                "is_downloadable": False,
-                "graph": False,
-                "graph_type": graph_type,
-                "graph_title": graph_title,
-                "timestamp": current_time,
-                "image": image,
-                "video": video,
-                "audio": audio
-            }), 400
+        # if chat_data is None:
+        #     return jsonify({
+        #         "status": False,
+        #         "msg": "Chat ID is required",
+        #         "data": data,
+        #         "end_prompt": False,
+        #         "table": False,
+        #         "is_downloadable": False,
+        #         "graph": False,
+        #         "graph_type": graph_type,
+        #         "graph_title": graph_title,
+        #         "timestamp": current_time,
+        #         "image": image,
+        #         "video": video,
+        #         "audio": audio
+        #     }), 400
 
-        if not chat_data.get("chat_initiated", False):
-            words = query.strip().split()
-            first_four_words = words[:4]
+        # if not chat_data.get("chat_initiated", False):
+        #     words = query.strip().split()
+        #     first_four_words = words[:4]
 
-            if not first_four_words:
-                return jsonify({"status": False, "msg": "Invalid query", "data": data, "end_prompt": False, "table": False, "is_downloadable": False, "graph": False, "graph_type": graph_type, "graph_title": graph_title, "timestamp": current_time}), 400
+        #     if not first_four_words:
+        #         return jsonify({"status": False, "msg": "Invalid query", "data": data, "end_prompt": False, "table": False, "is_downloadable": False, "graph": False, "graph_type": graph_type, "graph_title": graph_title, "timestamp": current_time}), 400
 
-            chat_name = " ".join(first_four_words)
-            chat_name = chat_name[:100]
-            chat_name_updated: bool = update_chat_name_by_id(user_id, chat_id, chat_name)
+        #     chat_name = " ".join(first_four_words)
+        #     chat_name = chat_name[:100]
+        #     chat_name_updated: bool = update_chat_name_by_id(user_id, chat_id, chat_name)
 
-            if not chat_name_updated:
-                print(f"[{function_name}] Update chat name failed: {chat_name}")
+        #     if not chat_name_updated:
+        #         print(f"[{function_name}] Update chat name failed: {chat_name}")
 
 
         config = {
             "configurable": {
-                "thread_id": chat_id,
+                "thread_id": "bc9f871c-6f26-44cc-853c-8ac98209e37d",
                 "user_id": user_id
             }
         }
@@ -322,7 +322,7 @@ def handle_user_query():
                 "audio": audio
             }), 400)
 
-        # prepare mongo conversation data
+        
         conversation_data = {
             "user_query": query,
             "ai_response": ai_response_text,
@@ -342,21 +342,9 @@ def handle_user_query():
             "button_text": button_text
         }
 
-        conversation_updated: bool = upsert_chat_conversation(user_id, chat_id, conversation_data)
-        if not conversation_updated:
-            print(f"[{function_name}] Failed to update conversation: {chat_id}")
-
-
-        # if is_downloadable is True and file_name != "" and file_url != "":
-        #     file_data = {
-        #         "file_name": file_name,
-        #         "file_url": file_url,
-        #         "created_date": int(time.time() * 1000)
-        #     }
-        #     file_saved: bool = upsert_chat_download_files(seller_id, file_data)
-        #
-        #     if not file_saved:
-        #         print(f"[{function_name}] Failed to update downloaded files in db: {chat_id}")
+        # conversation_updated: bool = upsert_chat_conversation(user_id, chat_id, conversation_data)
+        # if not conversation_updated:
+        #     print(f"[{function_name}] Failed to update conversation: {chat_id}")
 
 
         response_data = {
@@ -513,7 +501,7 @@ if __name__ == '__main__':
     print(f"Current Environment: {global_config.current_env}")
 
     # Initialize database connections
-    ScyllaConnection.init_connection()
+    # ScyllaConnection.init_connection()
     MilvusDB.connect()
 
 

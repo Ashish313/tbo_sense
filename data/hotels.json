@@ -14,7 +14,121 @@
         ],
         "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Baa_Atoll%2C_Maldives_-_panoramio_%281%29.jpg",
         "video": null,
-        "type": "Luxury Resort"
+        "type": "Luxury Resort",
+        "availability": {
+            "2026-02-01": {
+                "price": 1800,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 1998,
+                "status": "sold_out"
+            },
+            "2026-02-03": {
+                "price": 2304,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 2286,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 1908,
+                "status": "sold_out"
+            },
+            "2026-02-06": {
+                "price": 2363,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 2265,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 1914,
+                "status": "sold_out"
+            },
+            "2026-02-09": {
+                "price": 1865,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 1843,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 1917,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 1886,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 2125,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 2060,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 2222,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 2075,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 2205,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 2058,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 2318,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 1813,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 2012,
+                "status": "available"
+            },
+            "2026-02-22": {
+                "price": 2064,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 2273,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 2176,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 2389,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 2224,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 2158,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 1976,
+                "status": "available"
+            }
+        }
     },
     {
         "id": "h_mal_2",
@@ -31,7 +145,121 @@
         ],
         "image": "https://hotel.hardrock.com/maldives/files/6016/Aerial_View.jpeg",
         "video": null,
-        "type": "Resort"
+        "type": "Resort",
+        "availability": {
+            "2026-02-01": {
+                "price": 590,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 460,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 580,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 532,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 466,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 565,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 491,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 497,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 500,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 518,
+                "status": "sold_out"
+            },
+            "2026-02-11": {
+                "price": 553,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 508,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 488,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 522,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 530,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 480,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 466,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 495,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 493,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 478,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 573,
+                "status": "available"
+            },
+            "2026-02-22": {
+                "price": 594,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 566,
+                "status": "sold_out"
+            },
+            "2026-02-24": {
+                "price": 454,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 530,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 543,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 513,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 477,
+                "status": "available"
+            }
+        }
     },
     {
         "id": "h_mal_3",
@@ -47,7 +275,121 @@
         ],
         "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/03/65/59/aerial-view.jpg",
         "video": null,
-        "type": "Resort"
+        "type": "Resort",
+        "availability": {
+            "2026-02-01": {
+                "price": 349,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 284,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 358,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 352,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 320,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 340,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 306,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 313,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 354,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 293,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 296,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 279,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 323,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 352,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 275,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 293,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 298,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 312,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 275,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 312,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 286,
+                "status": "available"
+            },
+            "2026-02-22": {
+                "price": 270,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 342,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 341,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 301,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 358,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 283,
+                "status": "sold_out"
+            },
+            "2026-02-28": {
+                "price": 304,
+                "status": "available"
+            }
+        }
     },
     {
         "id": "h_mal_4",
@@ -62,6 +404,1157 @@
         ],
         "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Maafushi_%28Kaafu_Atoll%29%2C_Maldives_-_panoramio.jpg",
         "video": null,
-        "type": "Guest House"
+        "type": "Guest House",
+        "availability": {
+            "2026-02-01": {
+                "price": 84,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 76,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 89,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 80,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 92,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 91,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 95,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 79,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 80,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 89,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 84,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 87,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 89,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 75,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 73,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 74,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 91,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 75,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 95,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 95,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 96,
+                "status": "sold_out"
+            },
+            "2026-02-22": {
+                "price": 74,
+                "status": "sold_out"
+            },
+            "2026-02-23": {
+                "price": 80,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 78,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 86,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 93,
+                "status": "sold_out"
+            },
+            "2026-02-27": {
+                "price": 95,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 96,
+                "status": "available"
+            }
+        }
+    },
+    {
+        "id": "h_dxb_1",
+        "name": "Atlantis The Royal",
+        "location": "Dubai, UAE",
+        "rating": 5.0,
+        "type": "Luxury Resort",
+        "amenities": [
+            "Private Beach",
+            "Waterpark",
+            "Fine Dining",
+            "Spa"
+        ],
+        "image": "https://example.com/dxb1.jpg",
+        "video": null,
+        "price_per_night": 50000,
+        "availability": {
+            "2026-02-01": {
+                "price": 49196,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 52353,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 52303,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 57682,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 54078,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 52053,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 56826,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 52950,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 47999,
+                "status": "sold_out"
+            },
+            "2026-02-10": {
+                "price": 58876,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 50752,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 52518,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 47723,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 59982,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 57740,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 48811,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 59888,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 48881,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 57159,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 49649,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 57929,
+                "status": "available"
+            },
+            "2026-02-22": {
+                "price": 56176,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 57303,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 58351,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 56879,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 47792,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 57487,
+                "status": "sold_out"
+            },
+            "2026-02-28": {
+                "price": 56591,
+                "status": "available"
+            }
+        }
+    },
+    {
+        "id": "h_dxb_2",
+        "name": "Rove Downtown",
+        "location": "Dubai, UAE",
+        "rating": 4.5,
+        "type": "Hotel",
+        "amenities": [
+            "City View",
+            "Pool",
+            "Cinema",
+            "Gym"
+        ],
+        "image": "https://example.com/dxb2.jpg",
+        "video": null,
+        "price_per_night": 8000,
+        "availability": {
+            "2026-02-01": {
+                "price": 7792,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 8148,
+                "status": "sold_out"
+            },
+            "2026-02-03": {
+                "price": 7882,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 8396,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 9409,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 8124,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 7805,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 8971,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 8418,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 8393,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 7688,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 8289,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 7523,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 8469,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 9548,
+                "status": "sold_out"
+            },
+            "2026-02-16": {
+                "price": 9511,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 7866,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 8973,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 8627,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 8259,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 9465,
+                "status": "available"
+            },
+            "2026-02-22": {
+                "price": 7700,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 9133,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 8138,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 7870,
+                "status": "sold_out"
+            },
+            "2026-02-26": {
+                "price": 9114,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 8578,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 9589,
+                "status": "available"
+            }
+        }
+    },
+    {
+        "id": "h_lhr_1",
+        "name": "The Savoy",
+        "location": "London, UK",
+        "rating": 5.0,
+        "type": "Luxury Hotel",
+        "amenities": [
+            "Thames View",
+            "Butler Service",
+            "Pool",
+            "Spa"
+        ],
+        "image": "https://example.com/lhr1.jpg",
+        "video": null,
+        "price_per_night": 60000,
+        "availability": {
+            "2026-02-01": {
+                "price": 61391,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 59677,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 54638,
+                "status": "sold_out"
+            },
+            "2026-02-04": {
+                "price": 70826,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 55771,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 61179,
+                "status": "sold_out"
+            },
+            "2026-02-07": {
+                "price": 71706,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 68005,
+                "status": "sold_out"
+            },
+            "2026-02-09": {
+                "price": 62203,
+                "status": "sold_out"
+            },
+            "2026-02-10": {
+                "price": 58394,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 60840,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 61940,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 69928,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 55949,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 61784,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 58957,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 64095,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 69520,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 54138,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 63427,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 57955,
+                "status": "available"
+            },
+            "2026-02-22": {
+                "price": 62282,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 63124,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 60865,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 66793,
+                "status": "sold_out"
+            },
+            "2026-02-26": {
+                "price": 67093,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 71421,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 71256,
+                "status": "available"
+            }
+        }
+    },
+    {
+        "id": "h_lhr_2",
+        "name": "Ibis City Shoreditch",
+        "location": "London, UK",
+        "rating": 3.8,
+        "type": "Budget Hotel",
+        "amenities": [
+            "Free WiFi",
+            "Breakfast",
+            "Bar"
+        ],
+        "image": "https://example.com/lhr2.jpg",
+        "video": null,
+        "price_per_night": 12000,
+        "availability": {
+            "2026-02-01": {
+                "price": 10930,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 11219,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 11695,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 11766,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 12091,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 14046,
+                "status": "sold_out"
+            },
+            "2026-02-07": {
+                "price": 13290,
+                "status": "sold_out"
+            },
+            "2026-02-08": {
+                "price": 14212,
+                "status": "sold_out"
+            },
+            "2026-02-09": {
+                "price": 13386,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 14392,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 14007,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 14367,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 14241,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 12200,
+                "status": "sold_out"
+            },
+            "2026-02-15": {
+                "price": 13014,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 12535,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 13507,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 11760,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 13436,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 11933,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 12068,
+                "status": "sold_out"
+            },
+            "2026-02-22": {
+                "price": 12558,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 11254,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 11277,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 12415,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 11629,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 11552,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 14028,
+                "status": "available"
+            }
+        }
+    },
+    {
+        "id": "h_del_1",
+        "name": "The Oberoi New Delhi",
+        "location": "Delhi, India",
+        "rating": 5.0,
+        "type": "Luxury Hotel",
+        "amenities": [
+            "Golf Course View",
+            "Spa",
+            "Pool",
+            "Fine Dining"
+        ],
+        "image": "https://example.com/del1.jpg",
+        "video": null,
+        "price_per_night": 25000,
+        "availability": {
+            "2026-02-01": {
+                "price": 28940,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 27103,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 23895,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 28440,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 29553,
+                "status": "sold_out"
+            },
+            "2026-02-06": {
+                "price": 29236,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 23855,
+                "status": "sold_out"
+            },
+            "2026-02-08": {
+                "price": 28494,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 24255,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 27243,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 23715,
+                "status": "sold_out"
+            },
+            "2026-02-12": {
+                "price": 27939,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 28553,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 25103,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 27753,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 23169,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 23541,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 27590,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 27455,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 23655,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 25359,
+                "status": "available"
+            },
+            "2026-02-22": {
+                "price": 24101,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 23251,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 23874,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 26993,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 27998,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 28895,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 25979,
+                "status": "available"
+            }
+        }
+    },
+    {
+        "id": "h_del_2",
+        "name": "Bloomrooms Link Road",
+        "location": "Delhi, India",
+        "rating": 4.2,
+        "type": "Boutique Hotel",
+        "amenities": [
+            "Free WiFi",
+            "Cafe",
+            "Clean Rooms"
+        ],
+        "image": "https://example.com/del2.jpg",
+        "video": null,
+        "price_per_night": 4000,
+        "availability": {
+            "2026-02-01": {
+                "price": 3856,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 4539,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 4594,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 4055,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 3656,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 3952,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 3727,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 4579,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 4584,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 4045,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 4314,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 3886,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 3894,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 3920,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 3815,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 4487,
+                "status": "sold_out"
+            },
+            "2026-02-17": {
+                "price": 4342,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 4226,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 4016,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 4171,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 3634,
+                "status": "sold_out"
+            },
+            "2026-02-22": {
+                "price": 3855,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 4224,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 3828,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 3806,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 3620,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 4076,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 4730,
+                "status": "available"
+            }
+        }
+    },
+    {
+        "id": "h_bom_1",
+        "name": "Taj Mahal Palace",
+        "location": "Mumbai, India",
+        "rating": 5.0,
+        "type": "Luxury Heritage",
+        "amenities": [
+            "Sea View",
+            "History",
+            "Pool",
+            "Spa"
+        ],
+        "image": "https://example.com/bom1.jpg",
+        "video": null,
+        "price_per_night": 30000,
+        "availability": {
+            "2026-02-01": {
+                "price": 32555,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 33169,
+                "status": "sold_out"
+            },
+            "2026-02-03": {
+                "price": 34844,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 32663,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 34839,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 29614,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 34597,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 35418,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 29323,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 27615,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 31095,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 33327,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 27943,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 34461,
+                "status": "sold_out"
+            },
+            "2026-02-15": {
+                "price": 33025,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 28192,
+                "status": "available"
+            },
+            "2026-02-17": {
+                "price": 29535,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 29313,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 32261,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 35293,
+                "status": "available"
+            },
+            "2026-02-21": {
+                "price": 34650,
+                "status": "available"
+            },
+            "2026-02-22": {
+                "price": 28078,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 30586,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 30007,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 29280,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 35119,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 31987,
+                "status": "sold_out"
+            },
+            "2026-02-28": {
+                "price": 31170,
+                "status": "sold_out"
+            }
+        }
+    },
+    {
+        "id": "h_bom_2",
+        "name": "Trident Nariman Point",
+        "location": "Mumbai, India",
+        "rating": 4.7,
+        "type": "Business Hotel",
+        "amenities": [
+            "Sea View",
+            "Gym",
+            "Meeting Rooms"
+        ],
+        "image": "https://example.com/bom2.jpg",
+        "video": null,
+        "price_per_night": 15000,
+        "availability": {
+            "2026-02-01": {
+                "price": 16692,
+                "status": "available"
+            },
+            "2026-02-02": {
+                "price": 15350,
+                "status": "available"
+            },
+            "2026-02-03": {
+                "price": 14796,
+                "status": "available"
+            },
+            "2026-02-04": {
+                "price": 16337,
+                "status": "available"
+            },
+            "2026-02-05": {
+                "price": 17146,
+                "status": "available"
+            },
+            "2026-02-06": {
+                "price": 16503,
+                "status": "available"
+            },
+            "2026-02-07": {
+                "price": 15506,
+                "status": "available"
+            },
+            "2026-02-08": {
+                "price": 15438,
+                "status": "available"
+            },
+            "2026-02-09": {
+                "price": 17512,
+                "status": "available"
+            },
+            "2026-02-10": {
+                "price": 13942,
+                "status": "available"
+            },
+            "2026-02-11": {
+                "price": 16407,
+                "status": "available"
+            },
+            "2026-02-12": {
+                "price": 14480,
+                "status": "available"
+            },
+            "2026-02-13": {
+                "price": 15340,
+                "status": "available"
+            },
+            "2026-02-14": {
+                "price": 17232,
+                "status": "available"
+            },
+            "2026-02-15": {
+                "price": 15263,
+                "status": "available"
+            },
+            "2026-02-16": {
+                "price": 17553,
+                "status": "sold_out"
+            },
+            "2026-02-17": {
+                "price": 17327,
+                "status": "available"
+            },
+            "2026-02-18": {
+                "price": 17035,
+                "status": "available"
+            },
+            "2026-02-19": {
+                "price": 17453,
+                "status": "available"
+            },
+            "2026-02-20": {
+                "price": 15655,
+                "status": "sold_out"
+            },
+            "2026-02-21": {
+                "price": 14922,
+                "status": "sold_out"
+            },
+            "2026-02-22": {
+                "price": 14631,
+                "status": "available"
+            },
+            "2026-02-23": {
+                "price": 17952,
+                "status": "available"
+            },
+            "2026-02-24": {
+                "price": 17825,
+                "status": "available"
+            },
+            "2026-02-25": {
+                "price": 16491,
+                "status": "available"
+            },
+            "2026-02-26": {
+                "price": 17916,
+                "status": "available"
+            },
+            "2026-02-27": {
+                "price": 14812,
+                "status": "available"
+            },
+            "2026-02-28": {
+                "price": 17459,
+                "status": "available"
+            }
+        }
     }
 ]

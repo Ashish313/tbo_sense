@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify({
                 query: query,
                 // You might need to generate or store a session/chat ID
-                chat_id: "bc9f871c-6f26-44cc-853c-8ac98209e37a"
+                chat_id: "bc9f871c-6f26-44cc-853c-8ac98209e37d"
             })
         })
             .then(response => response.json())
